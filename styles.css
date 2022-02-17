@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap");
+
+@font-face {
+  font-family: AstroSpace;
+  src: url(/fonts/AstroSpace.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: white;
+}
+
+/*HEADER SECTION BEGINS*/
+header {
+  background-color: #66ccff;
+  padding: 20px 30px;
+}
+
+/*NAV SECTION BEGINS*/
+.main-nav {
+  height: 90px;
+}
+
+.navlinks {
+  list-style: none;
+  float: right;
+  line-height: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+.navlinks li {
+  display: inline-block;
+  margin: 0px 20px;
+  padding-right: 10px;
+}
+
+.navlinks li a {
+  color: #e6e6fa;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s linear 0s;
+  text-transform: uppercase;
+}
+
+.navlinks li a:hover {
+  color: black;
+  padding-bottom: 7px;
+  border-bottom: 2px solid;
+}
+
+#check {
+  display: none;
+}
+
+.menu-btn {
+  font-size: 25px;
+  color: white;
+  float: right;
+  line-height: 90px;
+  margin-right: 40px;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .logo {
+    padding: 20px;
+    height: 50px;
+    width: 50px;
+  }
+  .navlinks {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: all 0.5s;
+    right: -100%;
+    background: #66ccff;
+  }
+
+  .navlinks li {
+    display: block;
+  }
+
+  .navlinks li a {
+    font-size: 20px;
+  }
+
+  .navlinks li a:hover {
+    border-bottom: 2px solid;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  #check:checked ~ .navlinks {
+    position: fixed;
+    right: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu-btn {
+    margin-right: 10px;
+    font-size: 25px;
+  }
+}
+/*NAV SECTION ENDS*/
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.flex-item-left {
+  font-family: "Tangerine", cursive;
+  font-size: 4.5rem;
+  padding: 10px;
+  padding-left: 30px;
+  padding-top: 60px;
+  flex: 40%;
+}
+
+.flex-item-right {
+  padding: 10px;
+  padding-left: 5px;
+  flex: 60%;
+}
+
+@media (max-width: 1080px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .flex-item-right img {
+    height: 200px;
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-item-left {
+    font-size: 2rem;
+  }
+
+  .flex-item-right img {
+    height: 200px;
+    width: 300px;
+  }
+}
+/*HEADER SECTION ENDS*/
+
+/*ABOUT SECTION BEGINS*/
+#about {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.about-left {
+  flex: 40%;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+#about img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.about-right {
+  flex: 60%;
+  padding: 5px;
+  padding-right: 15px;
+}
+
+.about-right h2 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-right h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about-right p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.about-right a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.about-right a:hover {
+  color: #66ccff;
+  border-bottom: 2px solid;
+}
+
+@media (max-width: 800px) {
+  #about {
+    flex-direction: column;
+  }
+  #about img {
+    height: 180px;
+    width: 180px;
+  }
+  .about-right h2 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .about-right h4 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .about-right p {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #about {
+    flex-direction: column;
+  }
+  #about img {
+    height: 120px;
+    width: 120px;
+  }
+  .about-right h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .about-right h4 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .about-right p {
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+/*ABOUT SECTION ENDS*/
+
+/*Project Section*/
+
+#Projects {
+  margin-bottom: 3rem;
+}
+
+#Projects h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+#Projects h5 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.project-left {
+  background-color: #87cefa;
+  padding: 10px;
+  flex: 50%;
+}
+
+.project-middle {
+  background-color: #00ccff;
+  flex: 50%;
+}
+
+.project-right {
+  background-color: #87cefa;
+  padding: 10px;
+  flex: 50%;
+}
+.project-left h3,
+.project-middle h3,
+.project-right h3 {
+  font-size: 2.4rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.project-middle h3 {
+  padding-top: 10px;
+}
+
+.project-left p,
+.project-middle p,
+.project-right p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 200;
+  font-size: 1.6rem;
+  padding: 0 20px;
+}
+
+.project-container button {
+  background-color: #89cff0;
+  padding: 10px 16px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+.project-container a {
+  text-decoration: none;
+  color: black;
+  font-family: "Gideon Roman", cursive;
+  font-weight: 300;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#Projects h4 {
+  text-align: center;
+}
+
+#Projects a {
+  text-decoration: none;
+  color: black;
+  font-weight: lighter;
+}
+
+@media (max-width: 800px) {
+  .project-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) {
+  .project-middle p,
+  .project-left p,
+  .project-right p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .project-container {
+    flex-direction: column;
+  }
+  #Projects h1 {
+    font-size: 1.4rem;
+  }
+  #Projects h5 {
+    font-size: 1.2rem;
+  }
+  #Projects h4 {
+    font-size: 0.75rem;
+  }
+  .project-left h3,
+  .project-middle h3,
+  .project-right h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-left p,
+  .project-middle p,
+  .project-right p {
+    font-size: 1.2rem;
+  }
+
+  .project-container button {
+    padding: 4px 4px;
+  }
+  .project-container a {
+    font-size: 1rem;
+  }
+}
+/*PROJECT SECTION ENDS*/
+
+/* CONTACT ME SECTION BEGINS*/
+
+footer h3 {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-container {
+  background-color: #00ccff;
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-left {
+  flex: 50%;
+  padding: 1.5rem 0 0 3rem;
+}
+
+.contact-left p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.contact-left h5 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.contact-right {
+  padding-left: 20px;
+  flex: 50%;
+}
+
+.contact-right h3 {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.icon_3 {
+  margin: 0 10px 25px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.icon_3:hover {
+  color: black;
+}
+
+footer h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+@media (max-width: 500px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  footer h3 {
+    font-size: 1.5rem;
+  }
+
+  .contact-left p {
+    font-size: 0.75rem;
+  }
+
+  .contact-left h5 {
+    font-size: 0.75rem;
+  }
+
+  .contact-right h3 {
+    font-size: 0.75rem;
+    padding-left: 1.75rem;
+  }
+
+  .icon_3 {
+    padding-left: 0.75rem;
+  }
+
+  footer h2 {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  footer h3 {
+    font-size: 2rem;
+  }
+
+  .contact-left p {
+    font-size: 1.25rem;
+  }
+
+  .contact-left h5 {
+    font-size: 1.25rem;
+  }
+
+  .contact-right h3 {
+    font-size: 1.25rem;
+    padding-left: 1.75rem;
+  }
+
+  .icon_3 {
+    padding-left: 0.75rem;
+  }
+
+  footer h2 {
+    font-size: 1.25rem;
+  }
+}

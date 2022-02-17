@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <!-- Font awesome -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav">
+        <input type="checkbox" id="check" />
+        <label for="check" class="menu-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <img class="logo"
+          src="images/logo.jpg"
+          alt="Harsha Vasireddy"
+          height="90px"
+          width="90px"
+        />
+        <ul class="navlinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="flex-container">
+        <div class="flex-item-left">
+          Welcome to those who believe in the power of dreams and who would like
+          to join me in my exploration of life
+        </div>
+        <div class="flex-item-right">
+          <img
+            src="images/welcome.png"
+            alt="Welcome pic"
+            height="400px"
+            width="630px"
+          />
+        </div>
+      </div>
+    </header>
+    <section>
+      <div id="about">
+        <div class="about-left">
+          <img src="images/profile.JPG" alt="Welcome pic" />
+        </div>
+        <div class="about-right">
+          <h2>About Me</h2>
+          <h4>Harsha Vasireddy</h4>
+          <p>
+            I am a 2nd year Computer Science undergraduate student at Indian
+            Institute of Information Technology Design and Manufacturing.I have
+            a great taste for movies especially thrillers.I have been into
+            webdev since 1 year and I have made few project both as individual
+            and as a team.You can check them in the
+            <a href="#Projects">project</a> section and also in the
+            <a href="#contact">contact</a> section.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="Projects">
+      <h1>Projects</h1>
+      <h5>Here are few of my projects</h5>
+      <div class="project-container">
+        <div class="project-left">
+          <h3>Guess the Number</h3>
+          <p>
+            A simple project based on a dice which is closed and the user has to
+            guess the number which the dice is hiding, based on his inputs, the
+            game checks with the answer and if it is less then it displays low
+            and if it is more it displays high.You are given 20 attempts to find
+            the answer and your maximum high score is recorded.
+          </p>
+          <p>To try the game click the button given below.</p>
+          <button>
+            <a href="https://harsha662002.github.io/Guess-the-Number/"
+              >Click Here</a
+            >
+          </button>
+        </div>
+        <div class="project-middle">
+          <h3>Hsquare Automobiles</h3>
+          <p>
+            A static website which shows a website of an automobile company, the
+            services they provide, their offers and so on.The basic idea of
+            developing the website was to learn the css framework and the also
+            my first framework Bootstrap, it's uses and the advantages it
+            provides for writing code for the css part over the normal style of
+            writing css code.
+          </p>
+          <p class="pt">To try the game click the button given below.</p>
+          <button>
+            <a href="https://harsha662002.github.io/Hsquare-Automobiles/"
+              >Click Here</a
+            >
+          </button>
+        </div>
+        <div class="project-right">
+          <h3>Dice Cricket Game</h3>
+          <p>
+            The game basically contains two dices, one for each player.When
+            player 1 bats, the player 2 rolls his dice and based on the value
+            that the dice shows, the score is added to the player 1 total and
+            player 1 looses a wicket when the dice shows 6. Once the player 1
+            looses all 10 wickets, player 2 bats and at the end the player with
+            more score wins the game.
+          </p>
+          <p class="pt">To try the game click the button given below.</p>
+          <button>
+            <a href="https://harsha662002.github.io/Dice-Cricket-Name/"
+              >Click Here</a
+            >
+          </button>
+        </div>
+      </div>
+      <h4>
+        For more projects you can checkout my github account given in
+        <a href="#contact">Contact</a>
+        section.
+      </h4>
+    </section>
+    <footer id="contact">
+      <h3>Contact Me</h3>
+      <div class="contact-container">
+        <div class="contact-left">
+          <p>Harsha Vasireddy</p>
+          <p>Phone No: +91-9642287347</p>
+          <p>Email:- hvasireddy329@gmail.com</p>
+        </div>
+        <div class="contact-right">
+          <h3>Other Contacts</h3>
+          <a href="mailto:hvasireddy329@gmail.com">
+            <i class="icon_3 fas fa-envelope fa-2x"></i>
+          </a>
+          <a href=https://www.instagram.com/>
+            <i class="icon_3 fab fa-instagram fa-2x"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/harsha-vasireddy-9a12671ba/">
+            <i class="icon_3 fab fa-linkedin fa-2x"></i>
+          </a>
+          <a href="https://github.com/Harsha662002">
+            <i class="icon_3 fab fa-github fa-2x"></i>
+          </a>
+        </div>
+      </div>
+      <h2>© Copyright 2022 Harsha Vasireddy</h2>
+    </footer>
+  </body>
+</html>
